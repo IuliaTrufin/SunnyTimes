@@ -7,6 +7,7 @@ import { DataSourceService } from "src/app/services/datasource.service";
   styleUrls: ["./news.component.scss"]
 })
 export class NewsComponent implements OnInit {
+  
   constructor(public datasource: DataSourceService) {}
 
   ngOnInit(): void {}

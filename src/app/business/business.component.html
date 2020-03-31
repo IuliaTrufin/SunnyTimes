@@ -1,1 +1,9 @@
-<p>business works!</p>
+<div style="display: inline;">
+    <div
+      style="float:left"
+      *ngFor="let article of datasource.getBusinessSource(); let i = index"
+    >
+      <app-news-card [articleData]="article"></app-news-card>
+    </div>
+  </div>
+  
