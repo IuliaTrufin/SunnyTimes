@@ -1,0 +1,36 @@
+.button-container {
+  display: block;
+  padding-left: 35px;
+  padding-right: 35px;
+  cursor: pointer;
+}
+.buttons-container {
+  width: 100%;
+  display: flex;
+}
+
+.normal-card {
+  width: 18rem;
+}
+.double-card {
+  width: 100%;
+  background-image: url("https://images.theconversation.com/files/146533/original/image-20161118-19352-186bcu6.jpg?ixlib=rb-1.1.0&rect=0%2C617%2C6313%2C3062&q=45&auto=format&w=1356&h=668&fit=crop");
+  background-size: cover;
+}
+
+.app-card-container {
+  margin: 15px;
+  display: block;
+}
+
+.app-card-container-double {
+  width: calc(36rem + 30px);
+}
+
+.card-body-double {
+  margin: auto;
+  width: 95%;
+  background-color: white;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
