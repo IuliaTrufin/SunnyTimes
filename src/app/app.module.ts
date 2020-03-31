@@ -7,6 +7,11 @@ import { SidenavComponent } from "./menu/sidenav/sidenav.component";
 import { NewsComponent } from "./news/news/news.component";
 import { NewsCardComponent } from "./news-card/news-card/news-card.component";
 import { BusinessComponent } from "./business/business.component";
+import { LifeComponent } from './life/life.component';
+import { NationalComponent } from './national/national.component';
+import { InternationalComponent } from './international/international.component';
+import { SportsComponent } from './sports/sports.component';
+import { ArticleComponent } from './article/article.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +19,12 @@ import { BusinessComponent } from "./business/business.component";
     SidenavComponent,
     NewsComponent,
     NewsCardComponent,
-    BusinessComponent
+    BusinessComponent,
+    LifeComponent,
+    SportsComponent,
+    NationalComponent,
+    InternationalComponent,
+    ArticleComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
