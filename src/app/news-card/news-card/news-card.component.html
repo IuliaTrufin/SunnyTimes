@@ -5,11 +5,12 @@
   <div
     class="card"
     [ngClass]="{ 'normal-card': !isDouble, 'double-card': isDouble }"
+    [ngStyle]="{ 'background-image': isDouble ? getImage() : 'none' }"
   >
     <img
       class="card-img-top"
       *ngIf="!isDouble"
-      src="https://images.theconversation.com/files/146533/original/image-20161118-19352-186bcu6.jpg?ixlib=rb-1.1.0&rect=0%2C617%2C6313%2C3062&q=45&auto=format&w=1356&h=668&fit=crop"
+      src="{{ articleData.image }}"
       alt="Card image cap"
       height="142px"
     />
@@ -19,10 +20,12 @@
       *ngIf="isDouble"
     ></div>
     <div class="card-body" [ngClass]="{ 'card-body-double': isDouble }">
-      <h5 class="card-title">Card title</h5>
+      <h5 class="card-title">{{ articleData.title }}</h5>
       <p class="card-text">
-        Some quick example text to build on the card title and make up the bulk
-        of the card's content.
+        {{ getContent() }}...
+        <a routerLink="/article/{{ articleData.id }}" style="color:blue"
+          >Read more</a
+        >
       </p>
       <div class="buttons-container">
         <div class="button-container">Like</div>
