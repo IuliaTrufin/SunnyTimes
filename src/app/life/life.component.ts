@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DataSourceService } from "src/app/services/datasource.service";
+
 
 @Component({
   selector: 'app-life',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LifeComponent implements OnInit {
 
-  constructor() { }
+  constructor(public datasource: DataSourceService) { }
 
   ngOnInit(): void {
   }

@@ -1,1 +1,8 @@
-<p>national works!</p>
+<div style="display: inline;">
+    <div
+      style="float:left"
+      *ngFor="let article of datasource.getNationalSource(); let i = index"
+    >
+      <app-news-card [articleData]="article"></app-news-card>
+    </div>
+  </div>

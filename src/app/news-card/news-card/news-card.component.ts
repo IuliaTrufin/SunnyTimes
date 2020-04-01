@@ -21,6 +21,6 @@ export class NewsCardComponent implements OnInit {
   }
 
   getContent() {
-    return this.articleData.content.slice(0, 79);
+    return this.articleData.content.slice(0, 85);
   }
 }

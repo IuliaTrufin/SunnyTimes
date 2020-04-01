@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DataSourceService } from "src/app/services/datasource.service";
+
 
 @Component({
   selector: 'app-national',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NationalComponent implements OnInit {
 
-  constructor() { }
+  constructor(public datasource: DataSourceService) { }
 
   ngOnInit(): void {
   }

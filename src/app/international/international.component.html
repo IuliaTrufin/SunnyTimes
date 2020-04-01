@@ -1,1 +1,8 @@
-<p>international works!</p>
+<div style="display: inline;">
+    <div
+      style="float:left"
+      *ngFor="let article of datasource.getInternationalSource(); let i = index"
+    >
+      <app-news-card [articleData]="article"></app-news-card>
+    </div>
+  </div>
