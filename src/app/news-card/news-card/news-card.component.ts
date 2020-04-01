@@ -33,4 +33,24 @@ export class NewsCardComponent implements OnInit {
     }
     return this.articleData.title.substring(0, 17) + "...";
   }
+
+  isArticleLiked() {
+    return (
+      localStorage.getItem(`${this.articleCategory}-${this.articleData.id}`) ==
+      "true"
+    );
+  }
+
+  onLikeClick() {
+    localStorage.getItem(`${this.articleCategory}-${this.articleData.id}`) ==
+    "true"
+      ? localStorage.setItem(
+          `${this.articleCategory}-${this.articleData.id}`,
+          "false"
+        )
+      : localStorage.setItem(
+          `${this.articleCategory}-${this.articleData.id}`,
+          "true"
+        );
+  }
 }
