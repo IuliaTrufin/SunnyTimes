@@ -48,7 +48,7 @@ export class DataSourceService {
         title: "US deep surges in jobless claims",
         content:
           "A jarring new chart shows America needs to immediately brace itself for historic unemployment.",
-        image: "assets/pics/business/business2.jpg"
+        image: "assets/pics/business/business2.JPG"
       },
       {
         id: 2,
