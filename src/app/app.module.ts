@@ -14,6 +14,7 @@ import { SportsComponent } from "./sports/sports.component";
 import { ArticleComponent } from "./article/article.component";
 import { DataSourceService } from "./services/datasource.service";
 import { CategoryComponent } from './category/category.component';
+import { ArticleCreateComponent } from './article-create/article-create.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { CategoryComponent } from './category/category.component';
     NationalComponent,
     InternationalComponent,
     ArticleComponent,
-    CategoryComponent
+    CategoryComponent,
+    ArticleCreateComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [DataSourceService],

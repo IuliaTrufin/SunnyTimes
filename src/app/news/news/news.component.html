@@ -7,7 +7,12 @@
       *ngIf="i === 0"
       isDouble="true"
       [articleData]="article"
+      articleCategory="news"
     ></app-news-card>
-    <app-news-card *ngIf="i !== 0" [articleData]="article"></app-news-card>
+    <app-news-card
+      articleCategory="news"
+      *ngIf="i !== 0"
+      [articleData]="article"
+    ></app-news-card>
   </div>
 </div>

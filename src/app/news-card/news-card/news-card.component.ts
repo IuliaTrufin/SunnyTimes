@@ -12,6 +12,9 @@ export class NewsCardComponent implements OnInit {
   @Input("articleData")
   articleData: any;
 
+  @Input()
+  articleCategory: string;
+
   constructor() {}
 
   ngOnInit(): void {}
@@ -21,6 +24,13 @@ export class NewsCardComponent implements OnInit {
   }
 
   getContent() {
-    return this.articleData.content.slice(0, 85);
+    return this.articleData.content.slice(0, 75);
+  }
+
+  getTitleContent() {
+    if ((this.articleData.title as string).length < (this.isDouble ? 36 : 17)) {
+      return this.articleData.title;
+    }
+    return this.articleData.title.substring(0, 17) + "...";
   }
 }

@@ -20,10 +20,12 @@
       *ngIf="isDouble"
     ></div>
     <div class="card-body" [ngClass]="{ 'card-body-double': isDouble }">
-      <h5 class="card-title">{{ articleData.title }}</h5>
+      <h5 class="card-title">{{ getTitleContent() }}</h5>
       <p class="card-text">
         {{ getContent() }}...
-        <a routerLink="/article/{{ articleData.id }}" style="color:blue"
+        <a
+          routerLink="/article/{{ articleCategory }}/{{ articleData.id }}"
+          style="color:blue"
           >Read more</a
         >
       </p>

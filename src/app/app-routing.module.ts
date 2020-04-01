@@ -16,8 +16,8 @@ const routes: Routes = [
   { path: "national", pathMatch: "full", component: NationalComponent },
   { path: "international", pathMatch: "full", component: InternationalComponent },
   { path: "news", pathMatch: "full", component: NewsComponent },
-  { path: "article/:id", pathMatch: "full", component: ArticleComponent },
   { path: "category", pathMatch: "full", component: CategoryComponent },
+  { path: "article/:category/:id", pathMatch: "full", component: ArticleComponent },
   { path: "**", pathMatch: "full", redirectTo: "news" }
 ];
 

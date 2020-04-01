@@ -1,27 +1,38 @@
-<section id="cover">
+<section id="cover" class="min-vh-100">
     <div id="cover-caption">
-        <div id="container" class="container">
+        <div class="container">
             <div class="row">
-                <div class="col-sm-10 offset-sm-1 text-center">
-                    <h1 class="display-3">Welcome to Bootstrap 4</h1>
-                    <div class="info-form">
-                        <form action="" class="form-inline justify-content-center">
-                            <div class="form-group">
-                                <label class="sr-only">Name</label>
-                                <input type="text" class="form-control" placeholder="Jane Doe">
+                <div class="col-xl-5 col-lg-6 col-md-8 col-sm-10 mx-auto text-center form p-4">
+                    <h1 class="display-6 py-2 text-truncate">Add a new category</h1>
+                    <br><br><br>
+                    <div class="px-2">
+                        <form action="" class="justify-content-center">
+                            <div class="form-group" style="display:flex">
+                                <div style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 25px;">Category&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                                <div style="padding-top: 12px;">
+                                    <input type="text" class="form-control" style="width: 300px; height:45px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 15px;" placeholder="Name">
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <label class="sr-only">Email</label>
-                                <input type="text" class="form-control" placeholder="jane.doe@example.com">
+                            <br>
+                            <div class="form-group" style="display:flex">
+                                <div style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 25px;">Category&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>Tags&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                                <div style="padding-top: 12px;">
+                                    <input type="text" class="form-control" style="width: 500px; height:65px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 15px;" placeholder="#life, #sports, #business">
+                                </div>
                             </div>
-                            <button type="submit" class="btn btn-success ">okay, go!</button>
+                            <br>
+                            <div class="form-group" style="display:flex">
+                                <div style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 25px;">Account&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>Restricted&nbsp;&nbsp;&nbsp;</div>
+                                <div class="custom-control custom-switch" style="padding-top: 12px; color: #6200EE;">
+                                    <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                    <label class="custom-control-label" for="customSwitch1"></label>
+                                  </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg" style="background-color: #6200EE;">Submit</button>
                         </form>
                     </div>
-                    <br>
-
-                    <a href="#nav-main" class="btn btn-secondary-outline btn-sm" role="button">↓</a>
                 </div>
             </div>
         </div>
     </div>
-</section>
+</section>>
