@@ -13,6 +13,7 @@ import { InternationalComponent } from "./international/international.component"
 import { SportsComponent } from "./sports/sports.component";
 import { ArticleComponent } from "./article/article.component";
 import { DataSourceService } from "./services/datasource.service";
+import { CategoryComponent } from './category/category.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { DataSourceService } from "./services/datasource.service";
     SportsComponent,
     NationalComponent,
     InternationalComponent,
-    ArticleComponent
+    ArticleComponent,
+    CategoryComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [DataSourceService],
