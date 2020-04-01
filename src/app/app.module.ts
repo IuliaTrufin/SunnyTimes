@@ -15,6 +15,8 @@ import { ArticleComponent } from "./article/article.component";
 import { DataSourceService } from "./services/datasource.service";
 import { CategoryComponent } from './category/category.component';
 import { ArticleCreateComponent } from './article-create/article-create.component';
+import { OverlayComponentComponent } from "./overlay-component/overlay-component.component";
+import { LoginServiceService } from "./login-service.service";
 
 @NgModule({
   declarations: [
@@ -29,10 +31,11 @@ import { ArticleCreateComponent } from './article-create/article-create.componen
     InternationalComponent,
     ArticleComponent,
     CategoryComponent,
-    ArticleCreateComponent
+    ArticleCreateComponent,
+    OverlayComponentComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
-  providers: [DataSourceService],
+  providers: [DataSourceService, LoginServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
