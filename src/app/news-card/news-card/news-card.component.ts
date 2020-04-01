@@ -12,6 +12,9 @@ export class NewsCardComponent implements OnInit {
   @Input("articleData")
   articleData: any;
 
+  @Input()
+  articleCategory: string;
+
   constructor() {}
 
   ngOnInit(): void {}
@@ -26,7 +29,6 @@ export class NewsCardComponent implements OnInit {
 
   getTitleContent() {
     if ((this.articleData.title as string).length < (this.isDouble ? 36 : 17)) {
-      debugger;
       return this.articleData.title;
     }
     return this.articleData.title.substring(0, 17) + "...";

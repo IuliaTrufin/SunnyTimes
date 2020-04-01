@@ -19,7 +19,11 @@ const routes: Routes = [
     component: InternationalComponent
   },
   { path: "news", pathMatch: "full", component: NewsComponent },
-  { path: "article/:id", pathMatch: "full", component: ArticleComponent },
+  {
+    path: "article/:category/:id",
+    pathMatch: "full",
+    component: ArticleComponent
+  },
   { path: "**", pathMatch: "full", redirectTo: "news" }
 ];
 
