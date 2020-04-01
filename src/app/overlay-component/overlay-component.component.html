@@ -1,0 +1,46 @@
+<div
+  *ngIf="loginService.shouldDisplayLogin"
+  style="position: fixed;top:0; left:0; width:100%;height: 100%;display: block;background-color: rgba(0,1,1,0.5); z-index:100"
+>
+  <section id="cover" class="min-vh-100" style="opacity:1 !important; ">
+    <div id="cover-caption">
+      <div class="container">
+        <div class="row text-white" style="height: 100vh;">
+          <div
+            style="background-color: #c70aba;margin-top:auto; margin-bottom:auto; position:relative;"
+            class="col-xl-5 col-lg-6 col-md-8 col-sm-10 mx-auto text-center form p-4"
+          >
+            <h1 class="display-4 py-2 text-truncate">Login</h1>
+            <div class="px-2">
+              <form action="" class="justify-content-center">
+                <div class="form-group">
+                  <label style="float:left; font-size:24px;">Username</label>
+                  <input type="text" class="form-control" />
+                </div>
+                <div class="form-group">
+                  <label style="float:left; font-size:24px;">Password</label>
+                  <input type="password" class="form-control" />
+                </div>
+                <button
+                  type="submit"
+                  class="btn btn-primary btn-lg"
+                  (click)="onLoginClick()"
+                >
+                  Login
+                </button>
+                <button
+                  type="submit"
+                  class="btn btn-secondary btn-lg"
+                  style="margin-left:20px"
+                  (click)="onCancelClick()"
+                >
+                  Cancel
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

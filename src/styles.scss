@@ -112,8 +112,7 @@ h3 {
 
 #sidebar ul li a:hover,
 .signup:hover,
-.login:hover
-{
+.login:hover {
   color: #7386d5;
   background: #fff;
 }
@@ -198,4 +197,8 @@ a.article:hover {
   #sidebarCollapse span {
     display: none;
   }
+}
+
+.display-cursor-pointer {
+  cursor: pointer;
 }

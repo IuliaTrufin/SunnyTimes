@@ -13,6 +13,8 @@ import { InternationalComponent } from "./international/international.component"
 import { SportsComponent } from "./sports/sports.component";
 import { ArticleComponent } from "./article/article.component";
 import { DataSourceService } from "./services/datasource.service";
+import { OverlayComponentComponent } from "./overlay-component/overlay-component.component";
+import { LoginServiceService } from "./login-service.service";
 
 @NgModule({
   declarations: [
@@ -25,10 +27,11 @@ import { DataSourceService } from "./services/datasource.service";
     SportsComponent,
     NationalComponent,
     InternationalComponent,
-    ArticleComponent
+    ArticleComponent,
+    OverlayComponentComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
-  providers: [DataSourceService],
+  providers: [DataSourceService, LoginServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

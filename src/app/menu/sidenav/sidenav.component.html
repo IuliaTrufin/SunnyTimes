@@ -1,36 +1,41 @@
+<!-- Sidebar  -->
+<nav id="sidebar">
+  <div class="sidebar-header">
+    <h3>Sunny Times</h3>
+  </div>
 
-    <!-- Sidebar  -->
-    <nav id="sidebar">
-        <div class="sidebar-header">
-            <h3>Sunny Times</h3>
-        </div>
+  <ul class="list-unstyled components">
+    <li>
+      <a routerLink="/business" routerLinkActive="active">Business</a>
+    </li>
+    <li>
+      <a routerLink="/life" routerLinkActive="active">Life</a>
+    </li>
+    <li>
+      <a routerLink="/sports" routerLinkActive="active">Sports</a>
+    </li>
+    <li>
+      <a routerLink="/national" routerLinkActive="active">National News</a>
+    </li>
+    <li>
+      <a routerLink="/international" routerLinkActive="active"
+        >International News</a
+      >
+    </li>
+    <li *ngIf="loginService.isLoggedIn" class="display-cursor-pointer">
+      <a>Add new category</a>
+    </li>
+    <li *ngIf="loginService.isLoggedIn" class="display-cursor-pointer">
+      <a>Add new article</a>
+    </li>
+  </ul>
 
-        <ul class="list-unstyled components">
-            <li>
-                <a routerLink="/business" routerLinkActive="active">Business</a>
-            </li>
-            <li>
-                <a routerLink="/life" routerLinkActive="active">Life</a>
-            </li>
-            <li>
-                <a routerLink="/sports" routerLinkActive="active">Sports</a>
-            </li>
-            <li>
-                <a routerLink="/national" routerLinkActive="active">National News</a>
-            </li>
-            <li>
-                <a routerLink="/international" routerLinkActive="active">International News</a>
-            </li>
-            <li>
-                <a href="#">Add new category</a>
-            </li>
-            <li>
-                <a href="#">Add new article</a>
-            </li>
-        </ul>
-
-        <div class="auth-buttons">
-            <div class="signup"> <a href="https://bootstrapious.com/tutorial/files/sidebar.zip">Create account</a></div>
-            <div class="login"><a href="https://bootstrapious.com/p/bootstrap-sidebar">Login</a></div>
-        </div>
-    </nav>
+  <div class="auth-buttons">
+    <div class="signup">
+      <a>Create account</a>
+    </div>
+    <div class="login" (click)="onLoginClick()">
+      <a>Login</a>
+    </div>
+  </div>
+</nav>
