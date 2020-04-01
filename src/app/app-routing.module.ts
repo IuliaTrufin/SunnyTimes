@@ -1,3 +1,4 @@
+import { ArticleCreateComponent } from './article-create/article-create.component';
 import { NewsComponent } from "./news/news/news.component";
 import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: "international", pathMatch: "full", component: InternationalComponent },
   { path: "news", pathMatch: "full", component: NewsComponent },
   { path: "category", pathMatch: "full", component: CategoryComponent },
+  { path: "article", pathMatch: "full", component: ArticleCreateComponent },
   { path: "article/:category/:id", pathMatch: "full", component: ArticleComponent },
   { path: "**", pathMatch: "full", redirectTo: "news" }
 ];
