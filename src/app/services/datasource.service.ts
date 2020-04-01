@@ -2,6 +2,15 @@ import { Injectable } from "@angular/core";
 
 Injectable({ providedIn: "root" });
 export class DataSourceService {
+  rules = [
+    { category: "news", source: this.getDataSource },
+    { category: "business", source: this.getBusinessSource },
+    { category: "life", source: this.getLifeSource },
+    { category: "sports", source: this.getSportsSource },
+    { category: "national", source: this.getNationalSource },
+    { category: "international", source: this.getInternationalSource }
+  ];
+
   getDataSource() {
     return [
       {

@@ -30,8 +30,14 @@
         >
       </p>
       <div class="buttons-container">
-        <div class="button-container">Like</div>
-        <div style="display: block;width: 40px;;"></div>
+        <div
+          class="button-container"
+          (click)="onLikeClick()"
+          [class.button-liked]="isArticleLiked()"
+        >
+          Like
+        </div>
+        <div style="display: block;width: 40px;"></div>
         <div class="button-container">Save</div>
       </div>
     </div>
