@@ -1,13 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
-
 @Component({
-  selector: 'app-category',
-  templateUrl: './category.component.html',
-  styleUrls: ['./category.component.scss']
+  selector: 'app-signup',
+  templateUrl: './signup.component.html',
+  styleUrls: ['./signup.component.scss']
 })
-export class CategoryComponent implements OnInit {
+export class SignupComponent implements OnInit {
 
   constructor(private router:Router) { }
 
@@ -17,4 +16,5 @@ export class CategoryComponent implements OnInit {
   onSubmitClick() {
     this.router.navigate(['news']);
   }
+
 }

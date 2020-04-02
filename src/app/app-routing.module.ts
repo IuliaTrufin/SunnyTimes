@@ -9,6 +9,7 @@ import { NationalComponent } from "./national/national.component";
 import { ArticleComponent } from "./article/article.component";
 import { InternationalComponent } from "./international/international.component";
 import { CategoryComponent } from "./category/category.component";
+import { SignupComponent } from "./signup/signup.component";
 
 const routes: Routes = [
   { path: "business", pathMatch: "full", component: BusinessComponent },
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: "news", pathMatch: "full", component: NewsComponent },
   { path: "category", pathMatch: "full", component: CategoryComponent },
   { path: "article", pathMatch: "full", component: ArticleCreateComponent },
+  { path: "signup", pathMatch: "full", component: SignupComponent },
   { path: "article/:category/:id", pathMatch: "full", component: ArticleComponent },
   { path: "**", pathMatch: "full", redirectTo: "news" }
 ];

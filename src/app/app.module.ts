@@ -17,6 +17,8 @@ import { CategoryComponent } from './category/category.component';
 import { ArticleCreateComponent } from './article-create/article-create.component';
 import { OverlayComponentComponent } from "./overlay-component/overlay-component.component";
 import { LoginServiceService } from "./login-service.service";
+import { SignupComponent } from './signup/signup.component';
+import { FooterComponentComponent } from './footer-component/footer-component.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { LoginServiceService } from "./login-service.service";
     ArticleComponent,
     CategoryComponent,
     ArticleCreateComponent,
-    OverlayComponentComponent
+    OverlayComponentComponent,
+    SignupComponent,
+    FooterComponentComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [DataSourceService, LoginServiceService],

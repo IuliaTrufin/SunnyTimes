@@ -65,7 +65,8 @@ h3 {
 #sidebar {
   min-width: 250px;
   max-width: 250px;
-  background: #7386d5;
+  background: rgb(98,0,238);
+  background: linear-gradient(0deg, rgba(98,0,238,1) 57%, rgba(0,59,238,0.4881302862942052) 100%);
   color: #fff;
   transition: all 0.3s;
   height: 100vh;
@@ -77,12 +78,11 @@ h3 {
 
 #sidebar .sidebar-header {
   padding: 20px;
-  background: #6d7fcc;
 }
 
 #sidebar ul.components {
   padding: 20px 0;
-  border-bottom: 1px solid #47748b;
+  border-bottom: 1px solid #6200ee;
 }
 
 #sidebar ul p {
@@ -97,7 +97,7 @@ h3 {
 }
 
 #sidebar ul li a:hover {
-  color: #7386d5;
+  color: #6200ee;
   background: #fff;
 }
 #sidebar ul li a,
@@ -113,14 +113,14 @@ h3 {
 #sidebar ul li a:hover,
 .signup:hover,
 .login:hover {
-  color: #7386d5;
+  color: #6200ee;
   background: #fff;
 }
 
 #sidebar ul li.active > a,
 a[aria-expanded="true"] {
   color: #fff;
-  background: #6d7fcc;
+  background: #6200ee;
 }
 
 a[data-toggle="collapse"] {
@@ -138,7 +138,7 @@ a[data-toggle="collapse"] {
 ul ul a {
   font-size: 0.9em !important;
   padding-left: 30px !important;
-  background: #6d7fcc;
+  background: #6200ee;
 }
 
 ul.CTAs {
@@ -155,18 +155,18 @@ ul.CTAs a {
 
 a.download {
   background: #fff;
-  color: #7386d5;
+  color: #6200ee;
 }
 
 a.article,
 a.article:hover {
-  background: #6d7fcc !important;
+  background: #6200ee !important;
   color: #fff !important;
 }
 
 .auth-buttons {
   display: flex;
-  padding-top: 175px;
+  padding-top: 170px;
   width: 100%;
 }
 
